@@ -1,2 +1,0 @@
-module Auth::EvernoteHelper
-end
