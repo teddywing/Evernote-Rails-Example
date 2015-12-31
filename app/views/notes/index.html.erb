@@ -1,3 +1,9 @@
 <% @notebooks.each do |b| %>
 	<%= b.name %><br />
+
+	<% b.notes.each do |n| %>
+		<%= n.title %><br />
+		<%= n.enml.html_safe %><br />
+		<%= n.tags %>
+	<% end %>
 <% end %>

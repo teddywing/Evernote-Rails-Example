@@ -13,6 +13,7 @@ class NotesController < ApplicationController
     access_token = auth_token
     note_store = EvernoteService::NoteStore.new(notestore_url, access_token)
 
-    @notebooks = note_store.list_notebooks
+    @notebooks = note_store.notebooks
+    # @notes = @notebooks.collect { |b| b.notes }
   end
 end
