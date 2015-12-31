@@ -32,14 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# gem 'evernote_oauth'
-
 gem 'omniauth'
 gem 'omniauth-evernote'
 
 gem 'evernote-thrift'
 
-# gem 'evernote', '1.3.0', :github => 'kipcole9/evernote'
 gem 'evernote', '1.3.1', :github => 'teddywing/evernote'
 
 group :development, :test do
