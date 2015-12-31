@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
 
+  get 'notes' => 'notes#index'
+
   # get '/auth/evernote' => 'auth/evernote#index'
   get '/auth/evernote/callback' => 'sessions#create'
 
