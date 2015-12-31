@@ -1,4 +1,4 @@
-require_relative '../services/evernote'
+# require_relative '../services/evernote'
 
 class NotesController < ApplicationController
   def index
@@ -10,7 +10,7 @@ class NotesController < ApplicationController
 
     # @notes = @notebooks.collect { |b| e.notes_from_notebook(b) }
 
-    note_store = EvernoteService::NoteStore.new(notestore_url, access_token)
+    note_store = Evernote::NoteStore.new(notestore_url, access_token)
 
     @notebooks = note_store.notebooks
     # @notes = @notebooks.collect { |b| b.notes }

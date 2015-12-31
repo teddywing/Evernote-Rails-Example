@@ -40,6 +40,7 @@ gem 'omniauth-evernote'
 gem 'evernote-thrift'
 
 # gem 'evernote', '1.3.0', :github => 'kipcole9/evernote'
+gem 'evernote', '1.3.1', :github => 'teddywing/evernote'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
